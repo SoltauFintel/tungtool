@@ -1,0 +1,23 @@
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+compileJava.options.encoding = 'windows-1252'
+compileTestJava.options.encoding = 'windows-1252'
+
+mainClassName = 'de.mwvb.tung.TungApp'
+
+dependencies {
+	compile 'com.github.SoltauFintel.maja:maja-web:0.2.4' 
+	compile 'org.eclipse.jetty:jetty-server:9.4.8.v20171121'
+	compile 'org.eclipse.jetty:jetty-webapp:9.4.8.v20171121'
+	compile 'org.eclipse.jetty:jetty-client:9.4.8.v20171121'
+
+	testCompile 'junit:junit:4.12' 
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
+}

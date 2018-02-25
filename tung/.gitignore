@@ -1,0 +1,5 @@
+/bin/
+/build/
+/.gradle/
+/docker/readme.txt
+/docker/*.tar*
